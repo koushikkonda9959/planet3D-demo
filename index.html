@@ -43,11 +43,13 @@
       display: none;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 768px) {
       body{
         background-image: url("D:/Website design/Official Site for planet3d/logo background.png");
         background-repeat: no-repeat;
-        background-size: 500px 750px;
+        background-size: 100% 100%;
+        background-origin: border-box;
+        background-attachment: fixed;
       }
       #menu_bar{
         display: none;
@@ -55,6 +57,7 @@
       #menu_button{
         display: block;
         float: right;
+        height:60px;
       }
       #menu_list{
         display: none;
@@ -85,7 +88,7 @@
 
 <body>
   <nav style="background-color: black">
-    <img src="text_planet_3d.png" alt="Planet 3d logo" height="50px">
+    <img src="text_planet_3d.png" alt="Planet 3d logo" height="10%">
     <ul id="menu_bar">
       <li><a href="#feedback">Feedback</a></li>
       <li><a href="#pricing">Pricing</a></li>
@@ -94,7 +97,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#home">Home</a></li>
     </ul>
-    <img onclick = "menu_view()" id="menu_button" src="menu_icon.png" alt="menu_icon" height="40px">
+    <img onclick = "menu_view()" id="menu_button" src="menu_icon.png" alt="menu_icon" >
   </nav>
   <div id="menu_list">
     <ul>
@@ -109,3 +112,4 @@
 </body>
 
 </html>
+
