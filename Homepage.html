@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Planet 3D - Official Site </title>
+  <style>
+  body{
+    margin-top: 10px;
+    background-color: black;
+  }
+    nav ul {
+      display: inline;
+      list-style-type: none;
+    }
+
+    nav ul li a{
+      float: right;
+      padding: 15px;
+      color: white;
+      font-size: 1.3rem;
+    }
+    nav ul li{
+      display: inline;
+    }
+    nav ul li a:hover {
+      cursor: pointer;
+      display: block;
+      float: right;
+      padding: 15px;
+      color: black;
+      background-color: white;
+      transition: 1s;
+      border-radius: 10px;
+    }
+    #menu_button{
+      display: none;
+      padding: 5px;
+    }
+    #menu_button:hover{
+      background-color: rgba(50,50,50,0.7);
+    }
+    #menu_list{
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      body{
+        background-image: url("D:/Website design/Official Site for planet3d/logo background.png");
+        background-repeat: no-repeat;
+        background-size: 500px 750px;
+      }
+      #menu_bar{
+        display: none;
+      }
+      #menu_button{
+        display: block;
+        float: right;
+      }
+      #menu_list{
+        display: none;
+        background-color: rgba(0,0,0,0.6);
+        float: right;
+
+      }
+      #menu_list ul li{
+        margin: 10px;
+      }
+      #menu_list ul li a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+      }
+      #menu_list ul li:active{
+        background-color: white;
+        color: black;
+      }
+      #menu_list ul{
+        list-style-type: none;
+        letter-spacing: 2px;
+      }
+    }
+  </style>
+  <script src="webbehaviour.js"></script>
+</head>
+
+<body>
+  <nav style="background-color: black">
+    <img src="text_planet_3d.png" alt="Planet 3d logo" height="50px">
+    <ul id="menu_bar">
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
+    <img onclick = "menu_view()" id="menu_button" src="menu_icon.png" alt="menu_icon" height="40px">
+  </nav>
+  <div id="menu_list">
+    <ul>
+      <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+  </div>
+</body>
+
+</html>
