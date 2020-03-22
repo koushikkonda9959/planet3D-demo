@@ -69,6 +69,7 @@
     @media screen and (max-width: 1000px) {
       #menu_bar {
         display: none;
+        top:auto;
       }
 
       #menu_button {
@@ -79,8 +80,9 @@
 
       #menu_list {
         display: none;
-        position: absolute;
+        position: fixed;
         right: 0px;
+        top: 18%;
         background-color: rgba(0, 0, 0, 0.6);
         float: right;
         transition: 1s;
@@ -116,7 +118,7 @@
 </head>
 
 <body>
-  <nav style="background-color: black">
+  <nav style="background-color: black; position: fixed;">
     <img src="text_planet_3d.png" alt="Planet 3d logo" height="150px">
     <ul id="menu_bar">
       <li><a href="#feedback">Feedback</a></li>
@@ -138,7 +140,7 @@
       <li><a href="#feedback">Feedback</a></li>
     </ul>
   </div>
-  <div id="home">This company is started on the objective of making 3D computerised models to
+  <div id="home"><br><br><br><br>This company is started on the objective of making 3D computerised models to
     bring them to reality with increase in quality and to add the product an eco-friendly
     feature. In simple words, we use plastic which is bio degradable at reasonable price.
     We offer both products and services. This means if you have any 3D model in your PC
