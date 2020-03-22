@@ -4,24 +4,32 @@
 <head>
   <title>Planet 3D - Official Site </title>
   <style>
-  body{
-    margin-top: 10px;
-    background-color: black;
-  }
+    body {
+      margin-top: 10px;
+      background-image: url("https://github.com/koushikkonda9959/planet3D-demo/blob/master/logo%20background.png?raw=true");
+      background-repeat: no-repeat;
+      background-size: auto auto;
+      background-attachment: fixed;
+      background-position: center;
+      background-color: black;
+    }
+
     nav ul {
       display: inline;
       list-style-type: none;
     }
 
-    nav ul li a{
+    nav ul li a {
       float: right;
       padding: 15px;
       color: white;
       font-size: 1.3rem;
     }
-    nav ul li{
+
+    nav ul li {
       display: inline;
     }
+
     nav ul li a:hover {
       cursor: pointer;
       display: block;
@@ -32,52 +40,60 @@
       transition: 1s;
       border-radius: 10px;
     }
-    #menu_button{
+
+    #menu_button {
       display: none;
       padding: 5px;
     }
-    #menu_button:hover{
-      background-color: rgba(50,50,50,0.7);
+
+    #menu_button:hover {
+      background-color: rgba(50, 50, 50, 0.7);
     }
-    #menu_list{
+
+    #menu_list {
       display: none;
     }
 
+    #home {
+      color: white;
+      font-size: 1.5rem;
+      background-color: rgba(25, 25, 25, 0.9);
+    }
+
     @media screen and (max-width: 1000px) {
-      body{
-        background-image: url("https://github.com/koushikkonda9959/planet3D-demo/blob/master/logo%20background.png?raw=true");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-origin: border-box;
-        background-attachment: fixed;
-      }
-      #menu_bar{
+      #menu_bar {
         display: none;
       }
-      #menu_button{
+
+      #menu_button {
         display: block;
         float: right;
-        height:130px;
+        height: 130px;
       }
-      #menu_list{
+
+      #menu_list {
         display: none;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         float: right;
         transition: 1s;
       }
-      #menu_list ul li{
+
+      #menu_list ul li {
         margin: 20px 0px 20px 0px;
       }
-      #menu_list ul li a{
+
+      #menu_list ul li a {
         font-size: 3.5rem;
         text-decoration: none;
         color: white;
       }
-      #menu_list ul li:active{
+
+      #menu_list ul li:active {
         background-color: white;
         color: black;
       }
-      #menu_list ul{
+
+      #menu_list ul {
         list-style-type: none;
         letter-spacing: 2px;
       }
@@ -97,19 +113,25 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#home">Home</a></li>
     </ul>
-    <img onclick = "menu_view()" id="menu_button" src="menu_icon.png" alt="menu_icon" >
+    <img onclick="menu_view()" id="menu_button" src="menu_icon.png" alt="menu_icon">
   </nav>
   <div id="menu_list">
     <ul>
       <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contactus">Contact Us</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-      </ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
   </div>
+  <div id="home">This company is started on the objective of making 3D computerised models to
+    bring them to reality with increase in quality and to add the product an eco-friendly
+    feature. In simple words, we use plastic which is bio degradable at reasonable price.
+    We offer both products and services. This means if you have any 3D model in your PC
+    in any format. We will bring them to reality. Also it depends on size of printer which
+    we use. As a product based company, we offer many types of home decors, 3D portraits,
+    accessories and other goods in future. Also we provide online booking services in amazon.</div>
 </body>
 
 </html>
-
