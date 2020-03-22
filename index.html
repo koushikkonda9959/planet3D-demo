@@ -3,15 +3,12 @@
 
 <head>
   <title>Planet 3D - Official Site </title>
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
-      margin-top: 10px;
-      background-image: url("https://github.com/koushikkonda9959/planet3D-demo/blob/master/logo%20background.png?raw=true");
-      background-repeat: no-repeat;
-      background-size: auto auto;
-      background-attachment: fixed;
-      background-position: center;
-      background-color: black;
+      margin-top: 0px;
+      margin-left: 0px;
+      background-color: darkblue;
     }
 
     nav ul {
@@ -24,6 +21,8 @@
       padding: 15px;
       color: white;
       font-size: 1.3rem;
+      margin-top: 20px;
+      text-decoration: none;
     }
 
     nav ul li {
@@ -34,11 +33,12 @@
       cursor: pointer;
       display: block;
       float: right;
+      margin-top: 25px;
       padding: 15px;
       color: black;
       background-color: white;
       transition: 1s;
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
     #menu_button {
@@ -52,18 +52,33 @@
 
     #menu_list {
       display: none;
+      position: fixed;
     }
 
     #home {
+      text-align: center;
       color: white;
-      font-size: 2rem;
-      font-family: cursive;
-      background-color: rgba(25, 25, 25, 0.9);
+      font-size: 2.5rem;
+      font-family: arial;
+      background-color: darkblue;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 12%;
     }
     #gallery{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-gap: 5%;
+      display: block;
+    }
+    #about_us{
+      text-align: center;
+      padding: 5%;
+      color: white;
+      background-color: darkblue;
+      font-size: 2.5rem;
+      font-family: arial;
+    }
+    .slides{
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media screen and (max-width: 1000px) {
@@ -107,23 +122,16 @@
         list-style-type: none;
         letter-spacing: 2px;
       }
-      #gallery{
-        display: inline-grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 5%;
+      #home{
+        padding-top: 18%;
       }
-      #about_us{
-        color: white;
-        background-color: rgba(50,50,50,0.8);
-        font-size: 2.5rem;
-        font-family: cursive;
-      }
+
     }
   </style>
 </head>
 
 <body>
-  <nav style="background-color: black; position: fixed;">
+  <nav style="background-color: black; position: fixed; width:100%">
     <img src="text_planet_3d.png" alt="Planet 3d logo" height="150px">
     <ul id="menu_bar">
       <li><a href="#feedback">Feedback</a></li>
@@ -145,7 +153,7 @@
       <li><a href="#feedback">Feedback</a></li>
     </ul>
   </div>
-  <div id="home"><br><br><br><br>This company is started on the objective of making 3D computerised models to
+  <div id="home">This company is started on the objective of making 3D computerised models to
     bring them to reality with increase in quality and to add the product an eco-friendly
     feature. In simple words, we use plastic which is bio degradable at reasonable price.
     We offer both products and services. This means if you have any 3D model in your PC
@@ -153,13 +161,13 @@
     we use. As a product based company, we offer many types of home decors, 3D portraits,
     accessories and other goods in future. Also we provide online booking services in amazon.
   </div>
-  <div>
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71J%2ByRaCc5L._SL1500_.jpg" alt="skull image" width= "100%">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71Tm3r5L6yL._UL1500_.jpg" alt="mask image"  width= "100%">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81CdzWc0beL._SL1500_.jpg" alt="multipurpose stand"  width= "100%" height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81c4fFwA2QL._SL1500_.jpg" alt="biodegradable light vase"  width= "100%">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/812KzdFhidL._SL1500_.jpg" alt="self watering flower pot"  width= auto height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71ZiXsmSbOL._SL1500_.jpg" alt="laptop stand"  width= "100%">
+  <div id="gallery">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71J%2ByRaCc5L._SL1500_.jpg" alt="skull image" height="800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71Tm3r5L6yL._UL1500_.jpg" alt="mask image"  height= "800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81CdzWc0beL._SL1500_.jpg" alt="multipurpose stand" height="800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81c4fFwA2QL._SL1500_.jpg" alt="biodegradable light vase"  height="800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/812KzdFhidL._SL1500_.jpg" alt="self watering flower pot" height="800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71ZiXsmSbOL._SL1500_.jpg" alt="laptop stand" height="800px">
   </div>
   <div id="about_us">
     <h3><span style="text-decoration: underline;">About Us</span></h3>
@@ -175,4 +183,3 @@
 </body>
 
 </html>
-
