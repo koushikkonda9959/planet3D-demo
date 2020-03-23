@@ -8,7 +8,7 @@
     body {
       margin-top: 0px;
       margin-left: 0px;
-      background-color: rgb(40,40,40);
+      background-color: white;
     }
 
     nav ul {
@@ -57,10 +57,9 @@
 
     #home {
       text-align: center;
-      color: white;
-      font-size: 2.5rem;
-      font-family: arial;
-      background-color: rgb(40,40,40);
+      color: black;
+      font-size: 2rem;
+      font-family: sans-serif;
       padding-left: 5%;
       padding-right: 5%;
       padding-top: 12%;
@@ -69,16 +68,20 @@
       display: block;
     }
     #about_us{
-      text-align: center;
+      float: left;
       padding: 5%;
       color: white;
-      background-color: rgb(40,40,40);
+      background-color: white;
       font-size: 2.5rem;
-      font-family: arial;
+      font-family: auto;
     }
     .slides{
       margin-left: auto;
       margin-right: auto;
+    }
+    .content{
+      width: 40%;
+      font-size: 2rem;
     }
 
     @media screen and (max-width: 1000px) {
@@ -124,8 +127,18 @@
       }
       #home{
         padding-top: 18%;
+        text-align: center;
+        clear: both;
+        width: 80%;
       }
-
+      .content{
+        width: 100%;
+        clear: both;
+        text-align: center;
+      }
+      body{
+        background-color: #ffffcc;
+      }
     }
   </style>
 </head>
@@ -153,7 +166,7 @@
       <li><a href="#feedback">Feedback</a></li>
     </ul>
   </div>
-  <div id="home">This company is started on the objective of making 3D computerised models to
+  <div id="home">This company is started with the objective of making 3D computerized models to
     bring them to reality with increase in quality and to add the product an eco-friendly
     feature. In simple words, we use plastic which is bio degradable at reasonable price.
     We offer both products and services. This means if you have any 3D model in your PC
@@ -169,16 +182,41 @@
     <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/812KzdFhidL._SL1500_.jpg" alt="self watering flower pot" height="800px">
     <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71ZiXsmSbOL._SL1500_.jpg" alt="laptop stand" height="800px">
   </div>
-  <div id="about_us">
-    <h3><span style="text-decoration: underline;">About Us</span></h3>
-    Planet 3d is an up-coming startup laid in Hyderabad and providing 3D printing services across India. A team of young and talented professionals experienced in different fields, having common interest in technology of 3D printing added life to Planet 3D. We offer services in various fields such as Engineering Models, Construction and Architecture, Home decor, Life Sciences and Medical applications.
-    <hr>
-    <span style="text-decoration: underline;">Plastic-a curse to life</span><br>
-    Plastic was invented in recent past but came into our life very rapidly and now Its impact on our life has become so huge. Plastic is made of petro chemicals and takes several thousand years to degrade. Most of the used plastic end up in bins and reach Land-filling or burnt up or thrown into waters that often cause lots of pollution and harm to marine life. Hence we suggest to Reduce, ReUse and Recycle.
-    <hr>
-    <span style="text-decoration: underline;">Substitute for plastic</span><br>
-    A means to reduce plastic is to use alternatives to plastic. We use bioplastics that are made from plant extracts and provides every purpose of plastic with biodegradability and extended strength and resistance.
-</div>
+<p style="text-decoration: underline; color: red; margin-left: 40%; font-size: 3rem;">About Us</p>
+<br>
+<p class="content" style="float: left;padding-left: 10%;">Planet 3d is an up-coming startup laid in Hyderabad and providing 3D printing services across India. A team of young and talented professionals experienced in different fields, having common interest in technology of 3D printing added life to Planet 3D. We offer services in various fields such as Engineering Models, Construction and Architecture, Home decor, Life Sciences and Medical applications.</p>
+<img  class="content" style="float: right" src="https://monkeyecho.com/wp-content/uploads/tevo-tarantula-3d-printer-kit.jpg">
+<hr style="clear: both">
+<p class="content" style="color: red;clear: both; text-align: center;">Plastic-a curse to life</p><br><br>
+<p  class="content" style="float: right;padding-right: 10%;">Plastic was invented in recent past but came into our life very rapidly and now Its impact on our life has become so huge. Plastic is made of petro chemicals and takes several thousand years to degrade. Most of the used plastic end up in bins and reach Land-filling or burnt up or thrown into waters that often cause lots of pollution and harm to marine life. Hence we suggest to Reduce, ReUse and Recycle.</p>
+<img  class="content" style="float: left;" src="https://i.hurimg.com/i/hdn/75/0x0/5db68d3e67b0a91de849d9a6.jpg">
+<hr style="clear: both">
+<p class="content"  style="color: red;clear: both; text-align: center;">Substitute for plastic</p><br>
+<p class="content" style="float: left;padding-left: 10%">A means to reduce plastic is to use alternatives to plastic. We use bioplastics that are made from plant extracts and provides every purpose of plastic with biodegradability and extended strength and resistance.</p>
+<img class="content" style="float: right;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxA___2ZEdb-DMbZrZ0_BTNdbf6RqnBkAvdraQBzvouh4gDtfU">
+<hr style="clear: both">
+<p  class="content" style="color: red; clear: both;text-align: center;">What is 3D printing?</p><br>
+<p  class="content" style="float: right;">It is an additive manufacturing technology to build any complex object in a single stretch. A 3D printing can be compared to traditional handlooms used to weave clothes by alignment of threads(1 dimension ) to form a cloth of 2D. Similarly, In 3D printing, a filament is melted and extruded through nozzle To form layers and stacked together to form a perfect 3D object.</p>
+<iframe  class="content" style="margin-left: 5%" width="560" height="315" src="https://www.youtube.com/embed/Zw6cbwMXJ6w" frameborder="2px" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<hr style="clear: both">
+<p  class="content" style="float: left; padding-left: 10%;text-align: left"><span style="color: red">Advantages</span><br>Can build complex objects<br></p>
+<img  class="content" style="float: right" src="https://www.digitalengineering247.com/de/img/check-it-out-in-house-or-outsource-6-business-advantages-of-owning-a-desktop-3d-printer_1.jpg">
+<hr style="clear: both">
+<pre  class="content" style="float: left; padding-left: 10%;text-align: left; height: auto; font-family: auto">
+<u style="color: red">Applications:</u>
+Rapid prototyping
+Engineering
+Construction and architecture
+Medical and dental applications
+Home furnishing and decor
+Moulds
+Student projects
+</pre>
+<img class="content" style="float: right;margin:2px;" src="https://facfox.com/wp-content/uploads/2020/01/Untitled-31.png">
+<img class="content" style="float: right;" src="https://teatime.ginkgo3d.com/wp-content/uploads/2019/03/Wire.jpg">
+<footer style="background-color: black;height: 40px; clear: both;">
+<h5 style="color: white; text-align: center">All copy rights reserved&copy;<h5>
+</footer>
   <script src="webbehaviour.js"></script>
 </body>
 
