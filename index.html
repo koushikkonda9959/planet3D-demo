@@ -66,7 +66,6 @@
     }
     #gallery{
       display: block;
-      height: 800px;
     }
     #about_us{
       float: left;
@@ -77,17 +76,15 @@
       font-family: auto;
     }
     .slides{
-      padding: 10%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .content{
       width: 40%;
       font-size: 2rem;
     }
 
-    @media screen and (max-width: 1030px) {
-      nav{
-        height: 150px;
-      }
+    @media screen and (max-width: 960px) {
       #menu_bar {
         display: none;
         top:auto;
@@ -135,22 +132,19 @@
         width: 80%;
       }
       .content{
-        width: 90%;
+        width: 100%;
         clear: both;
         text-align: center;
       }
       body{
         background-color: #ffffcc;
       }
-      .slides{
-        height: 80%;
-    }
     }
   </style>
 </head>
 
 <body>
-  <nav style="background-color: black; position: fixed; width:100%; ">
+  <nav style="background-color: black; position: fixed; width:100%">
     <img src="text_planet_3d.png" alt="Planet 3d logo" height="150px">
     <ul id="menu_bar">
       <li><a href="#feedback">Feedback</a></li>
@@ -181,12 +175,12 @@
     accessories and other goods in future. Also we provide online booking services in amazon.
   </div>
   <div id="gallery">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71J%2ByRaCc5L._SL1500_.jpg" alt="skull image" height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71Tm3r5L6yL._UL1500_.jpg" alt="mask image"  height= "800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81CdzWc0beL._SL1500_.jpg" alt="multipurpose stand" height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81c4fFwA2QL._SL1500_.jpg" alt="biodegradable light vase"  height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/812KzdFhidL._SL1500_.jpg" alt="self watering flower pot" height="800px">
-    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71ZiXsmSbOL._SL1500_.jpg" alt="laptop stand" height="800px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71J%2ByRaCc5L._SL1500_.jpg" alt="skull image" height="800px" max-width="1000px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71Tm3r5L6yL._UL1500_.jpg" alt="mask image"  height= "800px"  max-width="1000px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81CdzWc0beL._SL1500_.jpg" alt="multipurpose stand" height="800px" max-width="1000px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/81c4fFwA2QL._SL1500_.jpg" alt="biodegradable light vase"  height="800px" max-width="1000px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/812KzdFhidL._SL1500_.jpg" alt="self watering flower pot" height="800px" max-width="1000px">
+    <img class="slides" src="https://images-na.ssl-images-amazon.com/images/I/71ZiXsmSbOL._SL1500_.jpg" alt="laptop stand" height="800px" max-width="1000px">
   </div>
 <p style="text-decoration: underline; color: red; margin-left: 40%; font-size: 3rem;">About Us</p>
 <br>
@@ -227,3 +221,4 @@ Student projects
 </body>
 
 </html>
+
